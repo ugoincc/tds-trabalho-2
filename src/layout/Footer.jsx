@@ -1,0 +1,18 @@
+function Footer() {
+  return (
+    <footer id="rodape">
+      <div className="container">
+        <p>
+          The HK™ Logo and HK Engineering™ are registered trade marks of H.K.
+          Engineering (Holdings) Ltd
+        </p>
+        <p>
+          © Copyright 2025 - All Rights Reserved - Privacy Policy - Design by
+          Hugo & Kelyton
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;

@@ -1,0 +1,269 @@
+/* Correção Temporária para o Backdrop Fantasma */
+.modal-backdrop {
+  /* Força o elemento a não ser exibido */
+  display: none !important;
+}
+
+/* Garante que o body não esteja travado */
+body.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+/* style.css (Ajustado) */
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== CABEÇALHO ===== */
+#cabecalho {
+  background-color: #0a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+#barra-superior {
+  background-color: #000;
+  color: #adb5bd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+/* REQUISITO: 'display: inline-block' */
+.icones-sociais a {
+  display: inline-block;
+  color: #adb5bd;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 3px;
+}
+.icones-sociais a:hover {
+  color: #fff;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c00000;
+}
+
+.lista-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-list {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0;
+  list-style: none;
+}
+
+.area-pesquisa {
+  display: flex;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.area-pesquisa button {
+  background-color: #c00000;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.area-pesquisa input {
+  flex: 1; /* Faz o input esticar e ocupar o espaço restante */
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+#conteudo-principal {
+  display: flex;
+}
+
+#coluna-esquerda {
+  flex: 3;
+  padding-right: 1.5em;
+}
+
+#coluna-direita {
+  flex: 1;
+  border-left: 1px solid #333;
+  padding-left: 1.5em;
+}
+
+.imagem-principal {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.secao-principal h2 {
+  color: #c00000;
+}
+
+.hr {
+  border-top: 1px solid #555;
+}
+
+.secao-processo {
+  margin-top: 30px;
+}
+
+.secao-horarios {
+  margin-top: 20px;
+}
+
+.secao-especialidades {
+  margin-top: 30px;
+}
+
+/* --- Coluna da Direita (Notícias) --- */
+.item-noticia {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item-noticia img {
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.texto-noticia h3 {
+  font-size: 1.1rem;
+  margin: 0 0 5px 0;
+}
+
+.texto-noticia p {
+  font-size: 0.9rem;
+  color: #adb5bd;
+  margin: 0;
+}
+
+/* ===== FORMULÁRIO ===== */
+
+#secao-formulario {
+  padding: 30px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#secao-formulario .form-label {
+  color: #f0f0f0;
+}
+
+#secao-formulario .form-control,
+#secao-formulario .form-select {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+#secao-formulario form > .mb-3 .form-control,
+#secao-formulario form > .col-md-6.mb-3 .form-control {
+  width: 60%;
+}
+
+#secao-formulario .row .form-control,
+#secao-formulario .row .form-select {
+  width: 100%;
+}
+
+#secao-formulario .form-control:focus {
+  background-color: #444;
+  border-color: #c00000;
+  color: #fff;
+}
+
+#rodape {
+  background-color: #000;
+  color: #adb5bd;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.aviso-mobile {
+  display: none;
+  background-color: #ffc107;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+}
+
+#voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c00000;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+#voltar-topo:hover {
+  background-color: #a00000;
+}
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 768px) {
+  /* Faz as colunas ficarem uma em cima da outra */
+  #conteudo-principal {
+    flex-direction: column;
+  }
+
+  #coluna-direita {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  /* Mostra o aviso que estava escondido */
+  .aviso-mobile {
+    display: block;
+  }
+
+  /* Faz os campos de formulário terem 100% em telas pequenas */
+  #secao-formulario form > .mb-3 .form-control,
+  #secao-formulario form > .col-md-6.mb-3 .form-control {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Faz a imagem e o texto da notícia ficarem empilhados
+    (um em cima do outro) em vez de lado a lado.
+  */
+  .item-noticia {
+    flex-direction: column;
+  }
+
+  /* Faz a imagem da notícia ocupar 100% da largura 
+    e ter um espaço abaixo dela.
+  */
+  .item-noticia img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,202 @@
+function Home() {
+  return (
+    <div id="conteudo-principal" className="container mt-4">
+      <main id="coluna-esquerda">
+        <section className="secao-principal">
+          <h2>HK Engineering - Especialistas em carros</h2>
+          <p>
+            Somos especializados em todos os aspectos do setor automotivo. Desde
+            a venda de veículos de alto padrão até a restauração completa e a
+            manutenção de carros clássicos e modernos.
+            <a href="#">Saiba mais...</a>
+          </p>
+
+          <div id="carouselExampleCaptions" className="carousel slide">
+            <div className="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  src="../../img/mclaren.jpg"
+                  className="imagem-principal d-block w-100"
+                  alt="mclaren-760s"
+                />
+
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Avaliação do seu usado</h5>
+                  <p>
+                    Valorizamos seu usado na troca por um de nossos veículos
+                  </p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="../../img/Hagerty_PCS_Collection-scaled.jpg"
+                  className="d-block w-100"
+                  alt="..."
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Vasto inventário de clássicos</h5>
+                  <p>Ícones automotivos e itens de coleção fazem parte da HK</p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="../../img/goodwood-fos.jpg"
+                  className="d-block w-100 h-auto"
+                  alt="..."
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Eventos exclusivos para clientes</h5>
+                  <p>
+                    O clube HK dá acesso à um calendário de eventos apenas para
+                    membros
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <section className="secao-estoque pt-4">
+          <h2>Nosso Estoque</h2>
+          <p className="text-secondary">Veja carros à pronta entrega:</p>
+
+          <ul id="estoqueContainer" className="row"></ul>
+        </section>
+      </main>
+
+      <aside id="coluna-direita">
+        <section className="secao-horarios">
+          <h3>Horários de Atentimento</h3>
+
+          <table className="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Segunda - Sexta</td>
+                <td>08:00 - 18:00</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>09:00 - 13:00</td>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>Fechado</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <hr />
+
+        <h2>Últimas Notícias</h2>
+
+        <article className="item-noticia">
+          <img src="../../img/astormartin.jpg" alt="Astor Martin" />
+          <div className="texto-noticia">
+            <h3>Scramble! HK Engineering</h3>
+            <p>
+              Ontem, membros da HK team... <a href="#">Saiba mais...</a>
+            </p>
+          </div>
+        </article>
+
+        <article className="item-noticia">
+          <img src="../../img/bmw_classNameica.jpg" alt="BMW classNameica" />
+          <div className="texto-noticia">
+            <h3>6 Horas de Fuji — WEC</h3>
+            <p>
+              Sob a sombra do Monte Fuji, o Fuji Speedway...
+              <a href="#">Saiba mais...</a>
+            </p>
+          </div>
+        </article>
+        <section className="secao-video">
+          <h3>Vídeo em Destaque</h3>
+
+          <div className="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/Kfj1SJBaeuQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </section>
+
+        <section className="secao-especialidades">
+          <h3>Nossas Especialidades</h3>
+          <ul>
+            <li>Restauração de Carros Clássicos</li>
+            <li>Manutenção de Superesportivos</li>
+            <li>Importação e Venda de Veículos</li>
+            <li>Customização de Interiores e Pintura</li>
+          </ul>
+        </section>
+
+        <section className="secao-processo">
+          <h3>Nosso Processo</h3>
+          <ol>
+            <li>Avaliação e Desmontagem Completa</li>
+            <li>Funilaria e Preparação do Chassis</li>
+            <li>Pintura e Acabamento</li>
+            <li>Remontagem e Testes Finais</li>
+          </ol>
+        </section>
+      </aside>
+    </div>
+  );
+}
+
+export default Home;
