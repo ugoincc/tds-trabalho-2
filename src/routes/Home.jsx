@@ -1,3 +1,7 @@
+import VehicleCard from "../components/VehicleCard";
+import { availableCars, mainCarouselData } from "../api/data/mockData";
+import SlideCarousel from "../components/SlideCarousel";
+
 function Home() {
   return (
     <div id="conteudo-principal" className="container mt-4">
@@ -12,93 +16,7 @@ function Home() {
           </p>
 
           <div id="carouselExampleCaptions" className="carousel slide">
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src="../../img/mclaren.jpg"
-                  className="imagem-principal d-block w-100"
-                  alt="mclaren-760s"
-                />
-
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Avaliação do seu usado</h5>
-                  <p>
-                    Valorizamos seu usado na troca por um de nossos veículos
-                  </p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="../../img/Hagerty_PCS_Collection-scaled.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Vasto inventário de clássicos</h5>
-                  <p>Ícones automotivos e itens de coleção fazem parte da HK</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="../../img/goodwood-fos.jpg"
-                  className="d-block w-100 h-auto"
-                  alt="..."
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Eventos exclusivos para clientes</h5>
-                  <p>
-                    O clube HK dá acesso à um calendário de eventos apenas para
-                    membros
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
+            <SlideCarousel carouselData={mainCarouselData} />
           </div>
         </section>
 
@@ -106,7 +24,11 @@ function Home() {
           <h2>Nosso Estoque</h2>
           <p className="text-secondary">Veja carros à pronta entrega:</p>
 
-          <ul id="estoqueContainer" className="row"></ul>
+          <div id="estoqueContainer" className="row">
+            {availableCars.map((car) => (
+              <VehicleCard key={car.modelYear} car={car} />
+            ))}
+          </div>
         </section>
       </main>
 

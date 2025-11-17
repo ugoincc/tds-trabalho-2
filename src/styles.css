@@ -1,15 +1,3 @@
-/* Correção Temporária para o Backdrop Fantasma */
-.modal-backdrop {
-  /* Força o elemento a não ser exibido */
-  display: none !important;
-}
-
-/* Garante que o body não esteja travado */
-body.modal-open {
-  overflow: auto !important;
-  padding-right: 0 !important;
-}
-
 /* style.css (Ajustado) */
 body {
   background-color: #1a1a1a;
