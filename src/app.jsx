@@ -16,9 +16,11 @@ const routeConfig = {
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Router>
+    <Router id="app-container">
       <Header />
-      <Outlet routes={routeConfig} />
+      <main className="content-wrapper">
+        <Outlet routes={routeConfig} />
+      </main>
       <Footer />
     </Router>
   </StrictMode>

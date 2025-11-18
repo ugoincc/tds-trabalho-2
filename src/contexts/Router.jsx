@@ -4,7 +4,7 @@ const RouterContext = createContext();
 
 export const useRouter = () => useContext(RouterContext);
 
-export const Router = ({ children }) => {
+export const Router = ({ children, id }) => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const Router = ({ children }) => {
 
   return (
     <RouterContext.Provider value={{ currentPath, navigate }}>
-      {children}
+      <div id={id}>{children}</div>
     </RouterContext.Provider>
   );
 };

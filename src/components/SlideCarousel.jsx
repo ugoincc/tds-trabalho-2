@@ -28,7 +28,7 @@ function SlideCarousel({ carouselData }) {
             />
 
             <div className="carousel-caption d-none d-md-block">
-              <h5>{item.caption}</h5>
+              <h5>{item.title}</h5>
               <p>{item.text}</p>
             </div>
           </div>

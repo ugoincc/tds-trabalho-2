@@ -2,17 +2,17 @@
 
 ### Requisitos Gerais e Tecnologias Base
 
-[ ] Definir o tema livre da aplicação web.
+[X] Definir o tema da aplicação web. (Vendas e serviços automotivos HK Engineering)
 
-[ ] Implementar a aplicação client-side/front-end com React.
+[X] Implementar a aplicação client-side/front-end com React.
 
-[ ] Manter os requisitos do Trabalho 1: Git, Github, HTML 5, CSS, Bootstrap e JavaScript.
+[X] Manter os requisitos do Trabalho 1: Git, Github, HTML 5, CSS, Bootstrap e JavaScript.
 
 #### Requisitos Específicos de React
 
 [ ] Componentes: Criar pelo menos 3 componentes (além do App.js).
 
-[ ] JSX: Executar códigos JavaScript dentro do JSX.
+[X] JSX: Executar códigos JavaScript dentro do JSX.
 
 [ ] Interpolação: Interpolar pelo menos 3 tipos de variáveis (comuns, arrays, objetos).
 
@@ -26,7 +26,7 @@
 
 [ ] Props: Utilizar pelo menos 3 tipos de props (variáveis comuns, variáveis de estado, função).
 
-[ ] Reuso de Componente: Reutilizar um componente através de loop.
+[X] Reuso de Componente: Reutilizar um componente através de loop.
 
 [ ] Formulário: Criar um formulário com pelo menos 5 tipos de input (ex: text, password, email, checkbox, select, textarea, number, radio, datalist, file, entre outros).
 

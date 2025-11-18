@@ -1,6 +1,11 @@
-import VehicleCard from "../components/VehicleCard";
-import { availableCars, mainCarouselData } from "../api/data/mockData";
+import VehicleCard from "../components/cards/VehicleCard";
+import {
+  availableCars,
+  mainCarouselData,
+  newsData,
+} from "../api/data/mockData";
 import SlideCarousel from "../components/SlideCarousel";
+import NewsItemCard from "../components/cards/NewsItemCard";
 
 function Home() {
   return (
@@ -63,27 +68,10 @@ function Home() {
         <hr />
 
         <h2>Últimas Notícias</h2>
+        {newsData.map((newsItem) => (
+          <NewsItemCard key={newsItem.altText} item={newsItem} />
+        ))}
 
-        <article className="item-noticia">
-          <img src="../../img/astormartin.jpg" alt="Astor Martin" />
-          <div className="texto-noticia">
-            <h3>Scramble! HK Engineering</h3>
-            <p>
-              Ontem, membros da HK team... <a href="#">Saiba mais...</a>
-            </p>
-          </div>
-        </article>
-
-        <article className="item-noticia">
-          <img src="../../img/bmw_classNameica.jpg" alt="BMW classNameica" />
-          <div className="texto-noticia">
-            <h3>6 Horas de Fuji — WEC</h3>
-            <p>
-              Sob a sombra do Monte Fuji, o Fuji Speedway...
-              <a href="#">Saiba mais...</a>
-            </p>
-          </div>
-        </article>
         <section className="secao-video">
           <h3>Vídeo em Destaque</h3>
 
