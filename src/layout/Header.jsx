@@ -1,5 +1,12 @@
-import React from "react";
 import { Link } from "../contexts/Router";
+
+const navItems = [
+  { label: "Home", link: "/" },
+  { label: "Vendas", link: "/vendas" },
+  { label: "Serviços", link: "/" },
+  { label: "Notícias", link: "/" },
+  { label: "Contato", link: "/contato" },
+];
 
 function Header() {
   return (
@@ -45,28 +52,16 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="menu-navegacao">
           <ul className="lista-menu navbar-nav me-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/vendas">
-                Vendas
-              </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Manutenção
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Noticias
-              </a>
-            </li>
+            {navItems.map((item) => (
+              <li className="nav-item">
+                <Link className="nav-link" to={item.link}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
 
           <div className="area-pesquisa">

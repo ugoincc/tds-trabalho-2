@@ -6,8 +6,20 @@ import {
 } from "../api/data/mockData";
 import SlideCarousel from "../components/SlideCarousel";
 import NewsItemCard from "../components/cards/NewsItemCard";
+import { useState } from "react";
+import CarDetailDialog from "../components/dialogs/CarDetailDialog";
 
 function Home() {
+  const [carDetailDialogOpen, setCarDetailDialogOpen] = useState(false);
+  const [carDetail, setCarDetail] = useState(null);
+
+  const handleCloseDialog = () => setCarDetailDialogOpen(false);
+
+  const handleOpenDialog = (selectedCar) => {
+    setCarDetail(selectedCar);
+    setCarDetailDialogOpen(true);
+  };
+
   return (
     <div id="conteudo-principal" className="container mt-4">
       <main id="coluna-esquerda">
@@ -31,9 +43,21 @@ function Home() {
 
           <div id="estoqueContainer" className="row">
             {availableCars.map((car) => (
-              <VehicleCard key={car.modelYear} car={car} />
+              <VehicleCard
+                key={car.modelYear}
+                car={car}
+                onClick={() => handleOpenDialog(car)}
+              />
             ))}
           </div>
+
+          {carDetailDialogOpen && (
+            <CarDetailDialog
+              isOpen={carDetailDialogOpen}
+              onClose={handleCloseDialog}
+              selectedCar={carDetail}
+            />
+          )}
         </section>
       </main>
 

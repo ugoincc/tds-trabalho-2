@@ -1,10 +1,7 @@
-function VehicleCard({ car }) {
+function VehicleCard({ car, onClick }) {
   return (
     <div className="col-lg-3 col-md-4 g-2">
-      <div
-        className="card h-100"
-        style={{ "background-color": "#2a2a2a", "border-color": "#555" }}
-      >
+      <div onClick={onClick} className="vehicle-card h-100">
         <img className="card-img-top" src={car.imagePath} alt={car.make} />
         <div className="card-body">
           <h4 style={{ color: "#c00000" }}>{car.make}</h4>
