@@ -3,7 +3,7 @@ import {
   availableCars,
   mainCarouselData,
   newsData,
-} from "../api/data/mockData";
+} from "../api/data/mockData"; /*descobrir o caminho disso */
 import SlideCarousel from "../components/SlideCarousel";
 import NewsItemCard from "../components/cards/NewsItemCard";
 import { useState } from "react";

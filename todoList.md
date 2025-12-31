@@ -34,7 +34,7 @@
 
 [ ] Classe Dinâmica: Utilizar pelo menos 1 classe CSS dinâmica.
 
-[ ] CSS Modules: Utilizar pelo menos 1 CSS Module.
+[ X ] CSS Modules: Utilizar pelo menos 1 CSS Module.
 
 #### Requisições HTTP
 

@@ -1,4 +1,4 @@
-/* style.css (Ajustado) */
+
 #app-container {
   min-height: 100vh;
   display: flex;
@@ -133,28 +133,6 @@ body {
   margin-top: 30px;
 }
 
-/* --- Coluna da Direita (Notícias) --- */
-.item-noticia {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.item-noticia img {
-  width: 100px;
-  margin-right: 10px;
-  border-radius: 4px;
-}
-
-.texto-noticia h3 {
-  font-size: 1.1rem;
-  margin: 0 0 5px 0;
-}
-
-.texto-noticia p {
-  font-size: 0.9rem;
-  color: #adb5bd;
-  margin: 0;
-}
 
 /* ===== FORMULÁRIO ===== */
 
