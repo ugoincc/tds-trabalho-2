@@ -32,7 +32,7 @@
 
 #### CSS (Estilização Dinâmica)
 
-[ ] Classe Dinâmica: Utilizar pelo menos 1 classe CSS dinâmica.
+[ X ] Classe Dinâmica: Utilizar pelo menos 1 classe CSS dinâmica.
 
 [ X ] CSS Modules: Utilizar pelo menos 1 CSS Module.
 
