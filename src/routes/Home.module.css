@@ -1,0 +1,63 @@
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudoPrincipal {
+  display: flex;
+}
+
+.colunaEsquerda {
+  flex: 3;
+  padding-right: 1.5em;
+}
+
+.colunaDireita {
+  flex: 1;
+  border-left: 1px solid #333;
+  padding-left: 1.5em;
+}
+
+.tituloContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.secaoPrincipal h1 {
+  color: #c00000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.secaoPrincipal h2 {
+  color: #c00000;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.secaoProcesso {
+  margin-top: 30px;
+}
+
+.secaoHorarios {
+  margin-top: 20px;
+}
+
+.secaoEspecialidades {
+  margin-top: 30px;
+}
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 768px) {
+  /* Faz as colunas ficarem uma em cima da outra */
+  .conteudoPrincipal {
+    flex-direction: column;
+  }
+
+  .colunaDireita {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
+

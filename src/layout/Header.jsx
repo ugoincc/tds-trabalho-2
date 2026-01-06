@@ -14,19 +14,19 @@ function Header() {
       <div id="barra-superior" className="container-fluid">
         <span className="telefone">+44 (0)1 923 287 687</span>
         <div className="icones-sociais">
-          <a href="#">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="#">
+          <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-google-plus-g"></i>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#">
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
         </div>

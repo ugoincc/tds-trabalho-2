@@ -92,45 +92,13 @@ body {
   padding: 5px 10px;
 }
 
-/* ===== CONTEÚDO PRINCIPAL ===== */
-#conteudo-principal {
-  display: flex;
-}
-
-#coluna-esquerda {
-  flex: 3;
-  padding-right: 1.5em;
-}
-
-#coluna-direita {
-  flex: 1;
-  border-left: 1px solid #333;
-  padding-left: 1.5em;
-}
-
 .imagem-principal {
   width: 100%;
   border-radius: 5px;
 }
 
-.secao-principal h2 {
-  color: #c00000;
-}
-
 .hr {
   border-top: 1px solid #555;
-}
-
-.secao-processo {
-  margin-top: 30px;
-}
-
-.secao-horarios {
-  margin-top: 20px;
-}
-
-.secao-especialidades {
-  margin-top: 30px;
 }
 
 
@@ -262,17 +230,6 @@ body {
 
 /* Para telas pequenas (celulares) */
 @media (max-width: 768px) {
-  /* Faz as colunas ficarem uma em cima da outra */
-  #conteudo-principal {
-    flex-direction: column;
-  }
-
-  #coluna-direita {
-    border-left: none;
-    padding-left: 0;
-    margin-top: 20px;
-  }
-
   /* Mostra o aviso que estava escondido */
   .aviso-mobile {
     display: block;

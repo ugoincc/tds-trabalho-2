@@ -10,21 +10,21 @@
 
 #### Requisitos Específicos de React
 
-[ ] Componentes: Criar pelo menos 3 componentes (além do App.js).
+[X] Componentes: Criar pelo menos 3 componentes (além do App.js). (VehicleCard, NewsItemCard, SlideCarousel, CarDetailDialog, Header, Footer, Router, Home, Vendas)
 
 [X] JSX: Executar códigos JavaScript dentro do JSX.
 
-[ ] Interpolação: Interpolar pelo menos 3 tipos de variáveis (comuns, arrays, objetos).
+[X] Interpolação: Interpolar pelo menos 3 tipos de variáveis (comuns, arrays, objetos). (car.make, availableCars.map(), car objeto)
 
 [ ] Eventos: Utilizar pelo menos 3 tipos de eventos (ex: mouse, teclado, formulário, arrasto, transferência, mídia entre outros).
 
-[ ] Imagens: Importar e exibir uma imagem.
+[X] Imagens: Importar e exibir uma imagem. (Imports em mockData.js e uso nos componentes)
 
-[ ] useState: Utilizar useState para pelo menos 3 tipos de variáveis (comuns, arrays, objetos).
+[X] useState: Utilizar useState para pelo menos 3 tipos de variáveis (comuns, arrays, objetos). (boolean, objeto/null, string) em Home e Router
 
-[ ] Renderização Condicional: Implementar renderização condicional usando useState.
+[X] Renderização Condicional: Implementar renderização condicional usando useState. ({carDetailDialogOpen && <CarDetailDialog />})
 
-[ ] Props: Utilizar pelo menos 3 tipos de props (variáveis comuns, variáveis de estado, função).
+[X] Props: Utilizar pelo menos 3 tipos de props (variáveis comuns, variáveis de estado, função). (car/item, isOpen/selectedCar, onClick/onClose)
 
 [X] Reuso de Componente: Reutilizar um componente através de loop.
 
@@ -38,11 +38,11 @@
 
 #### Requisições HTTP
 
-[ ] API: Criar (simular) ou utilizar uma API pronta.
+[X] API: Criar (simular) ou utilizar uma API pronta. (mockData.js simula API)
 
 [ ] Fetch API: Utilizar a Fetch API.
 
-[ ] useEffect: Utilizar o hook useEffect.
+[X] useEffect: Utilizar o hook useEffect. (Router.jsx)
 
 [ ] Custom Hook: Criar um custom hook para realizar requisições (GET/POST).
 

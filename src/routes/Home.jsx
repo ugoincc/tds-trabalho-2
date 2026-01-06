@@ -3,11 +3,12 @@ import {
   availableCars,
   mainCarouselData,
   newsData,
-} from "../api/data/mockData"; /*descobrir o caminho disso */
+} from "../api/data/mockData"; 
 import SlideCarousel from "../components/SlideCarousel";
 import NewsItemCard from "../components/cards/NewsItemCard";
 import { useState } from "react";
 import CarDetailDialog from "../components/dialogs/CarDetailDialog";
+import styles from "./Home.module.css";
 
 function Home() {
   const [carDetailDialogOpen, setCarDetailDialogOpen] = useState(false);
@@ -21,10 +22,13 @@ function Home() {
   };
 
   return (
-    <div id="conteudo-principal" className="container mt-4">
-      <main id="coluna-esquerda">
-        <section className="secao-principal">
-          <h2>HK Engineering - Especialistas em carros</h2>
+    <div className={`container mt-4 ${styles.conteudoPrincipal}`}>
+      <main className={styles.colunaEsquerda}>
+        <section className={styles.secaoPrincipal}>
+          <div className={styles.tituloContainer}>
+            <h1>HK Engineering</h1>
+            <h2>Especialistas em carros</h2>
+          </div>
           <p>
             Somos especializados em todos os aspectos do setor automotivo. Desde
             a venda de veículos de alto padrão até a restauração completa e a
@@ -41,7 +45,7 @@ function Home() {
           <h2>Nosso Estoque</h2>
           <p className="text-secondary">Veja carros à pronta entrega:</p>
 
-          <div id="estoqueContainer" className="row">
+          <div className="row">
             {availableCars.map((car) => (
               <VehicleCard
                 key={car.modelYear}
@@ -61,8 +65,8 @@ function Home() {
         </section>
       </main>
 
-      <aside id="coluna-direita">
-        <section className="secao-horarios">
+      <aside className={styles.colunaDireita}>
+        <section className={styles.secaoHorarios}>
           <h3>Horários de Atentimento</h3>
 
           <table className="table table-dark table-striped">
@@ -109,7 +113,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="secao-especialidades">
+        <section className={styles.secaoEspecialidades}>
           <h3>Nossas Especialidades</h3>
           <ul>
             <li>Restauração de Carros Clássicos</li>
@@ -119,7 +123,7 @@ function Home() {
           </ul>
         </section>
 
-        <section className="secao-processo">
+        <section className={styles.secaoProcesso}>
           <h3>Nosso Processo</h3>
           <ol>
             <li>Avaliação e Desmontagem Completa</li>
