@@ -16,7 +16,7 @@
 
 [X] Interpolação: Interpolar pelo menos 3 tipos de variáveis (comuns, arrays, objetos). (car.make, availableCars.map(), car objeto)
 
-[ ] Eventos: Utilizar pelo menos 3 tipos de eventos (ex: mouse, teclado, formulário, arrasto, transferência, mídia entre outros).
+[ X ] Eventos: Utilizar pelo menos 3 tipos de eventos (ex: mouse, teclado, formulário, arrasto, transferência, mídia entre outros).
 
 [X] Imagens: Importar e exibir uma imagem. (Imports em mockData.js e uso nos componentes)
 
