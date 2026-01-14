@@ -28,7 +28,7 @@
 
 [X] Reuso de Componente: Reutilizar um componente através de loop.
 
-[ ] Formulário: Criar um formulário com pelo menos 5 tipos de input (ex: text, password, email, checkbox, select, textarea, number, radio, datalist, file, entre outros).
+[ X ] Formulário: Criar um formulário com pelo menos 5 tipos de input (ex: text, password, email, checkbox, select, textarea, number, radio, datalist, file, entre outros). Página de contato.
 
 #### CSS (Estilização Dinâmica)
 

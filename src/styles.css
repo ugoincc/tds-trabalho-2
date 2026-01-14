@@ -38,7 +38,7 @@ body {
   font-size: 0.85rem;
 }
 
-/* REQUISITO: 'display: inline-block' */
+
 .icones-sociais a {
   display: inline-block;
   color: #adb5bd;
@@ -101,43 +101,6 @@ body {
   border-top: 1px solid #555;
 }
 
-
-/* ===== FORMULÁRIO ===== */
-
-#secao-formulario {
-  padding: 30px;
-  background-color: #2a2a2a;
-  border-radius: 8px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-#secao-formulario .form-label {
-  color: #f0f0f0;
-}
-
-#secao-formulario .form-control,
-#secao-formulario .form-select {
-  background-color: #333;
-  border-color: #555;
-  color: #fff;
-}
-
-#secao-formulario form > .mb-3 .form-control,
-#secao-formulario form > .col-md-6.mb-3 .form-control {
-  width: 60%;
-}
-
-#secao-formulario .row .form-control,
-#secao-formulario .row .form-select {
-  width: 100%;
-}
-
-#secao-formulario .form-control:focus {
-  background-color: #444;
-  border-color: #c00000;
-  color: #fff;
-}
 
 #rodape {
   background-color: #000;

@@ -8,10 +8,12 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Vendas from "./routes/Vendas";
 import Home from "./routes/Home";
+import Contato from "./routes/Contato";
 
 const routeConfig = {
   "/": <Home />,
   "/vendas": <Vendas />,
+  "/contato": <Contato />,
 };
 
 createRoot(document.getElementById("root")).render(
