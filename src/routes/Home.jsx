@@ -33,7 +33,6 @@ function Home() {
             Somos especializados em todos os aspectos do setor automotivo. Desde
             a venda de veículos de alto padrão até a restauração completa e a
             manutenção de carros clássicos e modernos.
-            <a href="#">Saiba mais...</a>
           </p>
 
           <div id="carouselExampleCaptions" className="carousel slide">

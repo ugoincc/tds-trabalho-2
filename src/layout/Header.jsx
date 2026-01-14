@@ -4,7 +4,7 @@ const navItems = [
   { label: "Home", link: "/" },
   { label: "Vendas", link: "/vendas" },
   { label: "Serviços", link: "/" },
-  { label: "Notícias", link: "/" },
+  { label: "Notícias", link: "/noticias" },
   { label: "Contato", link: "/contato" },
 ];
 
@@ -36,7 +36,7 @@ function Header() {
         id="menu-principal"
         className="container navbar navbar-expand-md navbar-dark"
       >
-        <a href="#" id="logo" className="navbar-brand">
+        <a href="/" id="logo" className="navbar-brand">
           {" "}
           HK Engineering
         </a>

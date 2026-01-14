@@ -10,7 +10,7 @@ function NewsItemCard({ item }) {
         <h3>{item.title}</h3>
 
         <p>
-          {item.summary} <a href="#">Saiba mais...</a>
+          {item.summary} <a href="/noticias">Saiba mais...</a>
         </p>
       </div>
     </article>

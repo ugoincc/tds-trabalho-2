@@ -9,11 +9,13 @@ import Footer from "./layout/Footer";
 import Vendas from "./routes/Vendas";
 import Home from "./routes/Home";
 import Contato from "./routes/Contato";
+import Noticias from "./routes/Noticias";
 
 const routeConfig = {
   "/": <Home />,
   "/vendas": <Vendas />,
   "/contato": <Contato />,
+  "/noticias": <Noticias />,
 };
 
 createRoot(document.getElementById("root")).render(
