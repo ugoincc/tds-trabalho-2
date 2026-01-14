@@ -47,7 +47,7 @@ function Contato() {
         </p>
 
         {enviado ? (
-          <div className={`alert alert-success ${styles.mensagemSucesso}`} role="alert">
+          <div className={`alert alert-success ${styles.mensagemSucesso}`}>
             <i className="fas fa-check-circle me-2"></i>
             <strong>Mensagem enviada com sucesso!</strong> Entraremos em contato em breve.
           </div>
