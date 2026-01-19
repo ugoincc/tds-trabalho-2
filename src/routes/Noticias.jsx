@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { newsData, mainCarouselData } from "../api/data/mockData";
-import styles from "./Noticias.module.css"; 
+import styles from "../modules/Noticias.module.css";
+
 
 function Noticias() {
   // Estado para guardar a notícia clicada

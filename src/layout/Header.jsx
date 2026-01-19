@@ -9,6 +9,7 @@ const navItems = [
 ];
 
 function Header() {
+
   return (
     <header id="cabecalho">
       <div id="barra-superior" className="container-fluid">

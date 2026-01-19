@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, useState } from "react"; // Adicionado useState
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { createRoot } from "react-dom/client";
@@ -18,14 +18,40 @@ const routeConfig = {
   "/noticias": <Noticias />,
 };
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
+function MainApp() {
+  const [mostrarAviso, setMostrarAviso] = useState(true);
+
+  return (
     <Router id="app-container">
+      {/* Aviso Mobile */}
+      {mostrarAviso && (
+        <div className="aviso-mobile">
+          <span>
+            <i className="fas fa-mobile-alt me-2"></i>
+            Atenção: Para uma melhor experiência, acesse o site via computador.
+          </span>
+          <button 
+            className="close-button" 
+            onClick={() => setMostrarAviso(false)}
+          >
+            &times;
+          </button>
+        </div>
+      )}
+
       <Header />
+      
       <main className="content-wrapper">
         <Outlet routes={routeConfig} />
       </main>
+
       <Footer />
     </Router>
+  );
+}
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <MainApp />
   </StrictMode>
 );

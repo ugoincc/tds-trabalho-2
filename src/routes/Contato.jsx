@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Contato.module.css";
+import styles from "../modules/Contato.module.css";
 
 function Contato() {
   const [formData, setFormData] = useState({

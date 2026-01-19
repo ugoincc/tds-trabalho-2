@@ -8,7 +8,7 @@ import SlideCarousel from "../components/SlideCarousel";
 import NewsItemCard from "../components/cards/NewsItemCard";
 import { useState } from "react";
 import CarDetailDialog from "../components/dialogs/CarDetailDialog";
-import styles from "./Home.module.css";
+import styles from "../modules/Home.module.css";
 
 function Home() {
   const [carDetailDialogOpen, setCarDetailDialogOpen] = useState(false);
