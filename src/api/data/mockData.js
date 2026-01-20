@@ -23,7 +23,7 @@ export const mainCarouselData = [
   {
     image: goodwodFOS,
     title: "Eventos exclusivos para clientes",
-    text: "O clube HK dá acesso à um calendário de eventos apenas para membros",
+    text: "O clube HK dá acesso a um calendário de eventos apenas para membros",
   },
 ];
 

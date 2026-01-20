@@ -40,11 +40,11 @@
 
 [X] API: Criar (simular) ou utilizar uma API pronta. (mockData.js simula API)
 
-[ ] Fetch API: Utilizar a Fetch API.
+[X] Fetch API: Utilizar a Fetch API. (em: useFetch.js)
 
 [X] useEffect: Utilizar o hook useEffect. (Router.jsx)
 
-[ ] Custom Hook: Criar um custom hook para realizar requisições (GET/POST).
+[X] Custom Hook: Criar um custom hook para realizar requisições (GET/POST). (useFetch.js)
 
 Entrega e Apresentação
 

@@ -1,7 +1,8 @@
 import React from "react";
+import FipeConsulta from "../components/cards/ConsultaFipe";
 
 function Vendas() {
-  return <div>Vendas</div>;
+  return <FipeConsulta/>
 }
 
 export default Vendas;

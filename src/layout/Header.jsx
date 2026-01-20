@@ -2,8 +2,7 @@ import { Link } from "../contexts/Router";
 
 const navItems = [
   { label: "Home", link: "/" },
-  { label: "Vendas", link: "/vendas" },
-  { label: "Serviços", link: "/" },
+  { label: "Consulta FIPE", link: "/vendas" },
   { label: "Notícias", link: "/noticias" },
   { label: "Contato", link: "/contato" },
 ];
