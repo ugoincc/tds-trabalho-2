@@ -1,16 +1,63 @@
-# React + Vite
+# HK Engineering (Trabalho 2 TDS - Versão React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto evoluído para a disciplina de "Tecnologias de Desenvolvimento de Software". O site da "HK Engineering", anteriormente uma aplicação vanilla client-side, foi migrado e reconstruído utilizando React, aplicando conceitos avançados como Hooks customizados, Context API para roteamento e integração com APIs externas.
 
-Currently, two official plugins are available:
+O objetivo desta versão é demonstrar a componentização de uma interface complexa e a gestão de estados assíncronos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Autores:
+- [Hugo Cordeiro](https://github.com/ugoincc)
+- [Kelyton Lacerda](https://github.com/Kelyton21)
 
-## React Compiler
+## Funcionalidades Principais
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este projeto não é apenas um site estático. Ele utiliza JavaScript para criar uma experiência modular e dinâmica:
 
-## Expanding the ESLint configuration
+* **Arquitetura Baseada em Componentes**
+    A interface é totalmente dividida em componentes reutilizáveis, como VehicleCard, NewsItemCard e SlideCarousel. O layout principal utiliza um Outlet para renderização dinâmica de rotas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Hook Customizado**
+    Hook Customizado useFetch Desenvolvimento de um hook de abstração para requisições HTTP que utiliza useCallback para garantir a estabilidade das referências de memória e evitar loops infinitos em useEffect.
+
+* **Integração Real-time com API FIPE**
+    Nova funcionalidade de consulta de preços de mercado. O componente FipeConsulta realiza chamadas em cascata (Marca -> Modelo -> Ano) para a API pública da FIPE, permitindo ao usuário avaliar veículos em tempo real.
+
+* **Estilização com CSS Modules**
+    Para evitar conflitos de escopo, cada componente possui seu próprio arquivo de estilo (.module.css), garantindo que as regras de CSS sejam aplicadas apenas ao componente específico.
+
+* **Gestão de Estado e Modais**
+    Uso intensivo de useState para controlar a abertura de diálogos de detalhes de veículos e modais de leitura de matérias completas.
+
+## Tecnologias Utilizadas
+
+* **React 18** (Hooks, Context API, Fragments)
+* **JavaScript (ES6+)** (Async/Await, Array Methods)
+* **CSS Modules** (Escopo local de estilos)
+* **Bootstrap 5** (Componentes, Grid System, Utilities)
+* **Font Awesome** (Ícones)
+* **API FIPE (Paralellum)** (Dados de mercado automotivo)
+
+## Como Executar
+
+Diferente da versão anterior, este projeto agora requer um ambiente Node.js para o gerenciamento de dependências e o processo de build do React.
+
+### 1. Instalação das Dependências
+
+```
+npm install
+```
+
+### 2. Execução em Desenvolvimento
+Para iniciar o servidor de desenvolvimento via Vite
+
+```
+npm run dev
+```
+
+### 3. Build para Produção
+Para gerar os arquivos otimizados para deploy:
+
+```
+npm run build
+```
+
+Acesse http://localhost:5173 no seu navegador.
