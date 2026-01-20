@@ -4,29 +4,30 @@ const navItems = [
   { label: "Home", link: "/" },
   { label: "Vendas", link: "/vendas" },
   { label: "Serviços", link: "/" },
-  { label: "Notícias", link: "/" },
+  { label: "Notícias", link: "/noticias" },
   { label: "Contato", link: "/contato" },
 ];
 
 function Header() {
+
   return (
     <header id="cabecalho">
       <div id="barra-superior" className="container-fluid">
         <span className="telefone">+44 (0)1 923 287 687</span>
         <div className="icones-sociais">
-          <a href="#">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="#">
+          <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-google-plus-g"></i>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#">
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
         </div>
@@ -36,7 +37,7 @@ function Header() {
         id="menu-principal"
         className="container navbar navbar-expand-md navbar-dark"
       >
-        <a href="#" id="logo" className="navbar-brand">
+        <a href="/" id="logo" className="navbar-brand">
           {" "}
           HK Engineering
         </a>

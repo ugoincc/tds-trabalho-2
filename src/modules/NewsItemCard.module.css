@@ -1,0 +1,22 @@
+.item-noticia {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .item-noticia img {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  .texto-noticia h3 {
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+  }
+  
+  .texto-noticia p {
+    font-size: 0.9rem;
+    color: #adb5bd;
+    margin: 0;
+  }
+

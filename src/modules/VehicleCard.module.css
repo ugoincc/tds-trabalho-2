@@ -1,0 +1,42 @@
+.vehicle-card {
+    padding: 10px;
+    border-color: #555;
+    border-radius: 8px;
+    border-width: 1px;
+    background-color: #2a2a2a;
+    cursor: pointer;
+  }
+  
+  .vehicle-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+  }
+
+
+  .vehicle-card.destaqueAno {
+    position: relative;
+  }
+
+  /* Selo de "LANÇAMENTO" e efeitos de destaque só aparecem no hover */
+  .vehicle-card.destaqueAno:hover {
+    border: 2px solid #c00000; 
+    box-shadow: 0 0 20px rgba(192, 0, 0, 0.5);
+    transform: scale(1.08);
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Selo "LANÇAMENTO" só aparece no hover */
+  .vehicle-card.destaqueAno:hover::after {
+    content: "LANÇAMENTO";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #c00000;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10;
+  }

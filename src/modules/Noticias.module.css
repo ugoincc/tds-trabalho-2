@@ -1,0 +1,146 @@
+.container {
+    padding-bottom: 4rem;
+    color: #f0f0f0;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+  
+  .titulo {
+    color: #c00000;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    color: #adb5bd;
+    font-size: 1.1rem;
+  }
+
+  /* src/routes/Noticias.module.css */
+.modalImagemResponsiva {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px; /* Opcional: arredondar cantos */
+    margin-bottom: 1rem;
+  }
+  
+  /* --- Destaque Principal (Hero) --- */
+  .heroSection {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Escurece a imagem para o texto aparecer */
+    transition: transform 0.5s ease;
+  }
+  
+  .heroSection:hover .heroImage {
+    transform: scale(1.05); /* Zoom suave ao passar o mouse */
+  }
+  
+  .heroContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  }
+  
+  .heroTag {
+    background-color: #c00000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* --- Grid de Notícias --- */
+  .newsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* --- Card Individual de Notícia --- */
+  .card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: #c00000;
+  }
+  
+  .cardImageContainer {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cardBody {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardDate {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.4;
+  }
+  
+  .cardExcerpt {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .heroSection {
+      height: 250px;
+    }
+    .titulo {
+      font-size: 1.8rem;
+    }
+  }
