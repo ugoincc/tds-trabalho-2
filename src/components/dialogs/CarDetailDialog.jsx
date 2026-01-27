@@ -30,19 +30,10 @@ function CarDetailDialog({ isOpen, onClose, selectedCar }) {
             alt={selectedCar.make}
           />
 
-          <div className="modal-body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
-              mollitia optio nisi molestias fugit id sunt aspernatur alias ullam
-              doloremque! Ullam, iure suscipit, amet iste atque error magnam
-              provident impedit eaque ipsum odio asperiores dicta consequatur
-              veritatis voluptatibus nihil sapiente praesentium delectus autem
-              hic non quis velit! Saepe, ab accusantium.
-            </p>
-
-            <p>
-              Interpolação aqui: Detalhes do objeto carro, array de opcionais do
-              carro, e alguma variavel comum{" "}
+          <div className="modal-body m-2" >
+            <p>{
+               selectedCar.details
+              }
             </p>
           </div>
         </div>

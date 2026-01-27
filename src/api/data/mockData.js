@@ -34,24 +34,28 @@ export const availableCars = [
     modelYear: "911 Turbo S - 2026",
     description: "KM: 3.032 - Chalk",
     imagePath: porscheImage,
+    details: "O Porsche 911 Turbo S é um carro de alta performance, equipado com um motor V8 biturbo de 4.0 litros feito à mão, entregando 650 cv. A grande novidade é a nova aerodinâmica ativa, com um spoiler dianteiro pneumático e asa traseira que ajustam a downforce em tempo real. Em testes de pista, ele superou supercarros com o dobro do preço, mantendo o luxo e a usabilidade diária típica da Porsche.",
   },
   {
     make: "Audi",
     modelYear: "R8 Coupe - 2019",
     description: "KM: 25.299 - Deep Blue",
     imagePath: audiImage,
+    details: "O Audi R8 Coupe é um carro de alta performance, equipado com um motor V8 biturbo de 4.0 litros feito à mão, entregando 650 cv. A grande novidade é a nova aerodinâmica ativa, com um spoiler dianteiro pneumático e asa traseira que ajustam a downforce em tempo real. Em testes de pista, ele superou supercarros com o dobro do preço, mantendo o luxo e a usabilidade diária típica da Porsche.",
   },
   {
     make: "Aston Martin",
     modelYear: "Vantage - 2025",
     description: "KM: 8.600 - Tanzanite Yellow",
     imagePath: astonImage,
+    details: "O Aston Martin Vantage é um carro de alta performance, equipado com um motor V8 biturbo de 4.0 litros feito à mão, entregando 650 cv. A grande novidade é a nova aerodinâmica ativa, com um spoiler dianteiro pneumático e asa traseira que ajustam a downforce em tempo real. Em testes de pista, ele superou supercarros com o dobro do preço, mantendo o luxo e a usabilidade diária típica da Porsche.",
   },
   {
     make: "Mercedes-Benz",
     modelYear: "AMG GT - 2024",
     description: "KM: 4.121 - Pristine Red",
     imagePath: mercedesImage,
+    details: "O Mercedes-Benz AMG GT é um carro de alta performance, equipado com um motor V8 biturbo de 4.0 litros feito à mão, entregando 650 cv. A grande novidade é a nova aerodinâmica ativa, com um spoiler dianteiro pneumático e asa traseira que ajustam a downforce em tempo real. Em testes de pista, ele superou supercarros com o dobro do preço, mantendo o luxo e a usabilidade diária típica da Porsche.",
   },
 ];
 
