@@ -1,0 +1,39 @@
+
+.carCard {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .closeButtonPos {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+  
+  .carImage {
+    max-height: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+
+  .detailsText {
+    line-height: 1.6;
+  }
+  
+  /* Responsividade  para telas menores  */
+  @media (max-width: 768px) {
+    .carCard {
+      flex-direction: column;
+    }
+    .carImage {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }

@@ -1,52 +1,40 @@
+import React from 'react';
+import styles from '../../modules/CarDetailDialog.module.css';
+
 function CarDetailDialog({ isOpen, onClose, selectedCar }) {
-  if (!selectedCar) return null;
 
   return (
+    // Mantive a classe global 'modal-overlay-base'
     <div className="modal-overlay-base">
+      
+      {/* Mantive a classe do Bootstrap 'modal-content' */}
       <div className="modal-content">
         
-        <div
-          style={{
-            position: "relative",
-            display: "flex",
-            flexDirection: "row",
-            border: "solid",
-            borderColor: "#333",
-            padding: "15px", 
-            borderRadius: "8px",
-            marginTop: "20px", 
-          }}
-        >
+        <div className={styles.carCard}>
+          
           <button 
-            className="close-button" 
+            className={`close-button ${styles.closeButtonPos}`} 
             onClick={onClose} 
-            style={{
-              position: "absolute",
-              top: "10px",
-              right: "10px",
-              zIndex: 10,
-            }}
           >
             &times;
           </button>
 
           <img
-            style={{ 
-              maxHeight: "300px", 
-              borderRadius: "4px",
-              objectFit: "cover"
-            }}
+            className={styles.carImage}
             src={selectedCar.imagePath}
             alt={selectedCar.make}
           />
 
           <div className="modal-body m-2">
-            <h5 style={{ color: "#c00000", marginBottom: "15px" }}>
+            
+            <h5 className={styles.title}>
               {selectedCar.make} - {selectedCar.modelYear}
             </h5>
-            <p style={{ lineHeight: "1.6" }}>
+            
+            <p className={styles.detailsText}>
               {selectedCar.details}
             </p>
+            
           </div>
         </div>
       </div>
