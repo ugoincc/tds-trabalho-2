@@ -4,10 +4,9 @@ import styles from '../../modules/CarDetailDialog.module.css';
 function CarDetailDialog({ isOpen, onClose, selectedCar }) {
 
   return (
-    // Mantive a classe global 'modal-overlay-base'
+
     <div className="modal-overlay-base">
       
-      {/* Mantive a classe do Bootstrap 'modal-content' */}
       <div className="modal-content">
         
         <div className={styles.carCard}>
