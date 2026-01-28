@@ -1,39 +1,51 @@
 function CarDetailDialog({ isOpen, onClose, selectedCar }) {
+  if (!selectedCar) return null;
+
   return (
-    <div
-      className={`modal-overlay-base ${isOpen ? "modal-overlay-active" : ""}`}
-      onClick={onClose}
-    >
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="close-button" onClick={onClose}>
-          &times;
-        </button>
-
-        <h2 style={{ color: "#c00000" }}>{selectedCar.make}</h2>
-        <h4>{selectedCar.modelYear}</h4>
-
+    <div className="modal-overlay-base">
+      <div className="modal-content">
+        
         <div
           style={{
+            position: "relative",
             display: "flex",
             flexDirection: "row",
             border: "solid",
-            "border-color": "#333",
-            padding: "4px",
+            borderColor: "#333",
+            padding: "15px", 
             borderRadius: "8px",
+            marginTop: "20px", 
           }}
         >
-          <img
+          <button 
+            className="close-button" 
+            onClick={onClose} 
             style={{
-              maxHeight: "300px",
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              zIndex: 10,
+            }}
+          >
+            &times;
+          </button>
+
+          <img
+            style={{ 
+              maxHeight: "300px", 
+              borderRadius: "4px",
+              objectFit: "cover"
             }}
             src={selectedCar.imagePath}
             alt={selectedCar.make}
           />
 
-          <div className="modal-body m-2" >
-            <p>{
-               selectedCar.details
-              }
+          <div className="modal-body m-2">
+            <h5 style={{ color: "#c00000", marginBottom: "15px" }}>
+              {selectedCar.make} - {selectedCar.modelYear}
+            </h5>
+            <p style={{ lineHeight: "1.6" }}>
+              {selectedCar.details}
             </p>
           </div>
         </div>

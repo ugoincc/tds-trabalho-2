@@ -11,14 +11,12 @@ import CarDetailDialog from "../components/dialogs/CarDetailDialog";
 import styles from "../modules/Home.module.css";
 
 function Home() {
-  console.log("TESTE DIRETO NO MOCK:", availableCars);
   const [carDetailDialogOpen, setCarDetailDialogOpen] = useState(false);
   const [carDetail, setCarDetail] = useState(null);
 
   const handleCloseDialog = () => setCarDetailDialogOpen(false);
 
   const handleOpenDialog = (selectedCar) => {
-    console.log("1. Clicou no carro:", selectedCar);
     setCarDetail(selectedCar);
     setCarDetailDialogOpen(true);
   };
@@ -61,7 +59,6 @@ function Home() {
               isOpen={carDetailDialogOpen}
               onClose={handleCloseDialog}
               selectedCar={carDetail}
-              
             />
           )}
         </section>
